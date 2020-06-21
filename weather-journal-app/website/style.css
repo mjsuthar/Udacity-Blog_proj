@@ -22,7 +22,10 @@ body {
   margin: 30px auto;
   padding: 2rem 1.25rem;
   position: relative;
-  background-color: rgb(156, 216, 213);
+  background-image: url(./wether.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   margin-bottom: 3rem;
   z-index: 999;
   box-shadow: 2px 5px 6px 6px rgba(82, 80, 80, 0.3), 9px 11px 11px 0 rgba(121, 118, 118, 0.4);
@@ -60,7 +63,7 @@ body {
   font-weight: bolder;
 }
 
-#contentry {
+#content {
   color: firebrick;
   font-weight: bolder;
 }

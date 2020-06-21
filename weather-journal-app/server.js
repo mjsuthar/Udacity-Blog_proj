@@ -20,25 +20,23 @@ app.use(cors());
 app.use(express.static('website'));
 
 // Setup Server
-
 const port = 8080;
 
 const server = app.listen(port, listener);
 
 function listener()
 {
-    console.log('server is running....');
     console.log('this is server port '+port);
 }
 
 // GET
-app.get('/all', function(req, res) {
+app.get('/getAllData', function(req, res) {
   res.send(projectData);
 });
 
 
 // POST route
-app.post('/addWeatherData', function(req, res) {
+app.post('/addNewData', function(req, res) {
   projectData = req.body;
   res.send(projectData);
 });

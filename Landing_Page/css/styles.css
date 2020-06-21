@@ -1,7 +1,7 @@
 
 body {
-    background: rgb(136, 203, 171);
-    background: linear-gradient( 0deg, rgb(116, 125, 127) 0%, rgb(47, 90, 84) 100% );
+    background: rgb(149, 203, 136);
+    background: linear-gradient( 0deg, rgb(98, 160, 86) 0%, rgb(53, 226, 10) 100% );
     margin: 0;
     font-family: 'Times', 'Times New Roman', serif;
     color: #fff;
@@ -21,6 +21,23 @@ body {
     }
   }
   
+  .post-img {
+    width: 200px;
+  }
+  
+  figure {
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+  }
+  
+  figcaption {
+    text-align: center;
+    padding: 10px 20px;
+    color: #000;
+  }
+
   blockquote {
     font-style: italic;
     line-height: 2;
@@ -38,7 +55,7 @@ body {
   }
 
   h2 {
-    border-bottom: 1px solid rgb(17, 204, 89);
+    border-bottom: 1px solid rgb(0, 0, 0);
     font-family: 'FreeMono', monospace;
     font-size: 3em;
     color: #fff;
@@ -77,7 +94,7 @@ body {
     padding-top: 15px;
   }
   
-  .navbar_menu .menu_link {
+  .navbar_menu .navBar_link {
     display: block;
     padding: 1em;
     font-weight: bold;
@@ -85,13 +102,13 @@ body {
     color: #000;
   }
   
-  .navbar_menu .menu_link:hover {
+  .navbar_menu .navBar_link:hover {
     background: #333;
     color: #fff;
     transition: ease 0.3s all;
   }
   
-  #navbar_list {
+  #navbar {
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -103,7 +120,7 @@ body {
     width: 100%;
     z-index: 6000;
     background: #fff;
-    box-shadow: 0 1px 20px 0 rgba(46,61,73,.2);
+    box-shadow: 0 1px 20px 0 rgba(78, 240, 56, 0.2);
     color: #525c65;
     font-weight: 400;
     letter-spacing: 0;
@@ -138,15 +155,28 @@ body {
   
   /* Footer Styles */
   .page_footer {
-    background: rgb(58, 83, 71);
+    background: rgb(67, 236, 33);
     padding: 2em;
     color: #fff;
+    text-align: center;
+    line-height: 0.5rem;
   }
   
   .page_footer p {
     color: #fff;
   }
   
+  .link-img {
+    opacity: 0.7;
+    width: 30px;
+    height: 30px;
+    margin: auto 10px;
+  }
+  
+  .link-img:hover {
+    opacity: 0.4;
+  }
+
   /* ---- Theme Rules ---- */
   /* Landing Container Styles */
   .landing_container {
@@ -166,87 +196,19 @@ body {
     margin-right: 0;
     margin-left: auto;
   }
-/*   
-  section:nth-of-type(odd) .landing_container::before {
-    content: '';
-    background: rgba(255, 255, 255, 0.187);
-    position: absolute;
-    z-index: -5;
-    width: 20vh;
-    height: 20vh;
-    border-radius: 50%;
-    opacity: 0;
-    transition: ease 0.5s all;
-  }
+
   
-  section:nth-of-type(even) .landing_container::before {
-    content: '';
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.2) 100%
-    );
-    position: absolute;
-    top: 3em;
-    right: 3em;
-    z-index: -5;
-    width: 10vh;
-    height: 10vh;
-    border-radius: 50%;
-    opacity: 0;
-    transition: ease 0.5s all;
-  }
-  
-  section:nth-of-type(3n) .landing_container::after {
-    content: '';
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.2) 100%
-    );
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -5;
-    width: 10vh;
-    height: 10vh;
-    border-radius: 50%;
-    opacity: 0;
-    transition: ease 0.5s all;
-  }
-  
-  section:nth-of-type(3n + 1) .landing_container::after {
-    content: '';
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.2) 100%
-    );
-    position: absolute;
-    right: 20vw;
-    bottom: -5em;
-    z-index: -5;
-    width: 15vh;
-    height: 15vh;
-    border-radius: 50%;
-    opacity: 0;
-    transition: ease 0.5s all;
-  } */
-  
-  section.your-active-class {
+  section.active_class {
     background: rgb(0, 0, 0);
     background: linear-gradient( 0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100% );
   }
   
-  section.your-active-class .landing_container::before {
+  section.active_class .landing_container::before {
     opacity: 1;
     animation: rotate 4s linear 0s infinite forwards;
   }
   
-  section.your-active-class .landing_container::after {
+  section.active_class .landing_container::after {
     opacity: 1;
     animation: rotate 5s linear 0s infinite forwards reverse;
   }

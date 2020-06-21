@@ -4,7 +4,12 @@ Udacity Front-End Web Developer Nano-degree - JavaScript & The DOM (Project-2): 
 
 Project Rubric: [rubric](https://review.udacity.com/#!/rubrics/2658/view)
 
-I created a persoanl blog web app. I'm going to use html5, css3- grid-layout, flexbox, media-queries, JavaScript .
+
+## Use
+-html5
+-css3 (grid-layout, flexbox, media-queries)
+-javaScript
+
 
 ## Start
 
