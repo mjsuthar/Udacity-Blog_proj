@@ -8,15 +8,15 @@ function handleSubmit(event) {
     {
         formText = " ";
     }
-    //console.log("::: Form Submitted :::")
+    console.log("::: Form Submitted :::")
     console.log(typeof formText)
     let data= {
         theText: formText
     };
 
-    //console.log(data);
+    console.log(data);
 
-   fetch('/testing', {
+  fetch('/testing', {
        method:"POST",
        body: JSON.stringify(data),
        headers: {"Content-Type": "application/json"}
@@ -25,7 +25,7 @@ function handleSubmit(event) {
     .then(function(res) {
        
             document.getElementById('results').innerHTML = res.text;
-            //console.log(res);
+            console.log(res);
         
     })
 

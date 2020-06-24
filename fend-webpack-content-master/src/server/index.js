@@ -10,7 +10,7 @@ require('dotenv').config()
 
 
 const textapi = new aylien({
-  application_id: process.env.API_ID,
+  application_id: process.env.APP_ID,
   application_key: process.env.API_KEY
 });
 
@@ -46,26 +46,22 @@ app.post('/testing', async (req, res, next) => {
     console.log(req.body);
     try {
       var data = textapi.sentiment({
-        //'text': 'John is a very good football player!'
         'text': req.body.theText
       }, function(error, response) {
-        console.log("error:-"+error);
+        
         if (error === null) {
-          console.log("server index res:-"+response);
           res.send(response);
         }
         else
         {
           response = {"text":""};
-          console.log("second :-"+response);
           res.send(response);
         }
       });
-      //res.send(mockAPIResponse)
+    
     } catch(error) {
-      // Passes errors into the handler
       return next(error)
     }
-    //res.send(returnVal);
+  
   })
   
