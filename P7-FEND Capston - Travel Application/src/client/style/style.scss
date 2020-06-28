@@ -1,0 +1,87 @@
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.trip_list{
+  width: 100%;
+  display: flex;
+  margin: 5px auto;
+}
+
+
+.new-trip{
+  margin: 40px auto;
+  padding: 10px 20px;
+}
+
+input[type=text], input[type = date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type=button] {
+  width: 100%;
+  background-color: #53afaf;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=button]:hover {
+  background-color: #45a098;
+  
+}
+
+.box{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 360px;
+  height: 400px;
+  margin: 10px auto;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+#header{
+  text-align: center;
+  
+}
+.card-img-top{
+  height: 400px !important;
+    width: 80%;
+    margin: 0px auto;
+}
+
+@media (max-width: 980px) {
+  .header {
+    font-size: 2rem;
+  }
+  .card-img-top{
+    height: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .search {
+    width: 100%;
+    height: 255px;
+  }
+  .card-img-top {
+    height: 200px !important;
+  }
+}
+@media screen and (min-width: 576px) {
+  .jumbotron {
+    padding: 8rem 2rem;
+  }
+}
+
+
